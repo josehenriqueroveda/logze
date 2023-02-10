@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='logze',
-    version='0.1.0',
+    version='0.1.1',
     description='Library in Python to store logs in MongoDB and send notifications of errors to Teams',
     author='Jose Henrique Roveda',
     author_email='josehenriqueroveda@usp.br',
