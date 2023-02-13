@@ -9,9 +9,9 @@ class Log:
     event (str): Event where the log was triggered.
     """
 
-    def __init__(self, source: str, level: str, message: str, function: str):
+    def __init__(self, source: str, level: str, message: str, event: str):
         self.source = source
         self.timestamp = str(datetime.now())
         self.level = level.lower()
         self.message = message
-        self.function = function
+        self.event = function
