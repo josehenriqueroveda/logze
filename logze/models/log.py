@@ -1,9 +1,17 @@
 from datetime import datetime
 
-class Log():
-    def __init__(self, job, level, message, function):
-        self.job = job
+
+class Log:
+    """Attributes:
+    source (str): Source project/file of the log.
+    level (str): 'info', 'warn' or 'error'.
+    message (str): Log detailed message.
+    event (str): Event where the log was triggered.
+    """
+
+    def __init__(self, source: str, level: str, message: str, function: str):
+        self.source = source
         self.timestamp = str(datetime.now())
-        self.level = level
+        self.level = level.lower()
         self.message = message
         self.function = function

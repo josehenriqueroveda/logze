@@ -3,10 +3,11 @@ import os
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 
+
 class TestLogRecording(unittest.TestCase):
     def setUp(self):
-        mongo_uri = os.environ.get('MONGO_URI')
-        db_name = os.environ.get('DB_NAME')
+        mongo_uri = os.environ.get("MONGO_URI")
+        db_name = os.environ.get("DB_NAME")
         if not mongo_uri:
             raise ValueError("MONGO_URI is not set")
         if not db_name:
@@ -36,5 +37,6 @@ class TestLogRecording(unittest.TestCase):
         recorded_logs = list(collection.find({}))
         self.assertEqual(len(recorded_logs), 0)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
