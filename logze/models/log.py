@@ -14,4 +14,4 @@ class Log:
         self.timestamp = str(datetime.now())
         self.level = level.lower()
         self.message = message
-        self.event = function
+        self.event = event

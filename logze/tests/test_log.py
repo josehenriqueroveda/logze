@@ -2,6 +2,9 @@ import unittest
 import os
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
+import sys
+sys.path.append('../')
+from models.log import Log
 
 
 class TestLogRecording(unittest.TestCase):
@@ -23,16 +26,16 @@ class TestLogRecording(unittest.TestCase):
             self.fail(f"Failed to connect to MongoDB: {e}")
 
     def test_log_recording(self):
-        log = {"message": "Test log"}
+        log = Log("Log Unit Test", "info", "Test log", "test_log_recording")
         collection = self.test_logs["tests"]
-        collection.insert_one(log)
-        recorded_log = collection.find_one(log)
-        self.assertEqual(log, recorded_log)
+        collection.insert_one(log.__dict__)
+        recorded_log = collection.find_one(log.__dict__)
+        self.assertEqual(log.__dict__, recorded_log)
 
     def test_delete_log(self):
-        log = {"message": "Test log"}
+        log = Log("Log Unit Test", "info", "Test log", "test_log_recording")
         collection = self.test_logs["tests"]
-        collection.insert_one(log)
+        collection.insert_one(log.__dict__)
         collection.delete_many({})
         recorded_logs = list(collection.find({}))
         self.assertEqual(len(recorded_logs), 0)
