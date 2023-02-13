@@ -1,8 +1,6 @@
 import requests
 from pymongo import MongoClient
-import sys
-sys.path.append('../')
-from models.log import Log
+from logze.models.log import Log
 
 
 class LogRecorder:
