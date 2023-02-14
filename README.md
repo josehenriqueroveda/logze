@@ -25,7 +25,7 @@ from logze.models.log import Log
 recorder = LogRecorder("{YOUR_CONN_STRING}", "{DB_NAME}", "{COLLECTION_NAME}", "{MS_TEAMS_WEBHOOK}")
 
 log = Log("{SOURCE}", "{LOG_TYPE}", "{MESSAGE}", "{EVENT}")
-recorder.record_log(log, "{YOUR_CONN_STRING}")
+recorder.record_log(log)
 ```
 
 ## Running unit tests
