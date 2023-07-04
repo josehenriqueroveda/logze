@@ -1,8 +1,13 @@
 
 # LOGZE
+
+[![PyPI version fury.io](https://badge.fury.io/py/logze.svg)](https://pypi.python.org/pypi/logze/)
+[![PyPI download month](https://img.shields.io/pypi/dm/logze.svg)](https://pypi.python.org/pypi/logze/)
+![GitHub repo size](https://img.shields.io/github/repo-size/josehenriqueroveda/logze)
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/Naereen/badges.svg)](http://isitmaintained.com/project/logze/badges "Percentage of issues still open")
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 ![GitHub top language](https://img.shields.io/github/languages/top/josehenriqueroveda/logze)
-![GitHub repo size](https://img.shields.io/github/repo-size/josehenriqueroveda/logze)
+
 
 Library in Python to store logs in MongoDB and send notifications of errors to MS Teams.
 
