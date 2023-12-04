@@ -45,4 +45,4 @@ class LogRecorder:
                 "title": f"Log: {log.source}",
                 "text": str(log.timestamp) + " " + log.message,
             }
-            requests.post(url, headers=headers, json=payload)
+            requests.post(url, headers=headers, json=payload, timeout=5)

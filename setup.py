@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="logze",
-    version="0.1.7",
+    version="0.1.8",
     description="Library in Python to store logs in MongoDB and send notifications of errors to Microsoft Teams",
     long_description=long_description,
     long_description_content_type="text/markdown",
