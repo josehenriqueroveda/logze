@@ -2,7 +2,7 @@
 # LOGZE
 
 [![PyPI version fury.io](https://badge.fury.io/py/logze.svg)](https://pypi.python.org/pypi/logze/)
-[![PyPI download month](https://img.shields.io/pypi/dm/logze.svg)](https://pypi.python.org/pypi/logze/)
+[![Downloads](https://static.pepy.tech/badge/logze)](https://pepy.tech/project/logze)
 [![Bandit](https://github.com/josehenriqueroveda/logze/actions/workflows/bandit.yml/badge.svg)](https://github.com/josehenriqueroveda/logze/actions/workflows/bandit.yml)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/Naereen/badges.svg)](http://isitmaintained.com/project/logze/badges "Percentage of issues still open")
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
